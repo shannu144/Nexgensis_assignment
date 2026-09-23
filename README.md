@@ -191,12 +191,16 @@ Both views share the same data source and action handlers.
 | Add product form with validation             | ✅     |
 | Edit product form pre-populated              | ✅     |
 | Delete confirmation modal                    | ✅     |
-| CRUD persisted across sessions (localStorage overlay) | ✅ |
 | Loading spinner state                        | ✅     |
+| Shimmer skeleton loaders (table + mobile cards) | ✅  |
 | Empty state with "Reset filters" button      | ✅     |
 | Error state with Retry button                | ✅     |
 | Toast notifications for CRUD actions         | ✅     |
 | Logout clears session and redirects          | ✅     |
+| Signup page `/signup` with password strength meter | ✅ |
+| Dark mode toggle (next-themes)               | ✅     |
+| User profile dropdown in Navbar              | ✅     |
+| Live inventory stats bar (4 metric cards)    | ✅     |
 | Clean git commit history                     | ✅     |
 | ESLint 0 errors                              | ✅     |
 | TypeScript build 0 errors                    | ✅     |
