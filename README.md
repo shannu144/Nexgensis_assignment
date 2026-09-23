@@ -2,6 +2,9 @@
 
 A production-ready frontend assignment built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **Axios**, consuming the [DummyJSON API](https://dummyjson.com).
 
+- 🌐 **Live URL**: [https://nexgensis-assignment-ivory.vercel.app/products](https://nexgensis-assignment-ivory.vercel.app/products)
+- 📦 **GitHub Repository**: [https://github.com/shannu144/Nexgensis_assignment](https://github.com/shannu144/Nexgensis_assignment)
+
 ---
 
 ## 🚀 Getting Started
