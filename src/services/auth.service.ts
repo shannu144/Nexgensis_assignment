@@ -1,5 +1,5 @@
 import apiClient from "@/lib/axios";
-import { LoginCredentials, LoginResponse, User } from "@/types/auth";
+import { LoginCredentials, LoginResponse, SignupCredentials, SignupResponse, User } from "@/types/auth";
 
 export const authService = {
   /**
@@ -28,6 +28,20 @@ export const authService = {
     };
 
     return user;
+  },
+
+  /**
+   * Register a new user via DummyJSON /users/add
+   */
+  async signup(credentials: SignupCredentials): Promise<SignupResponse> {
+    const response = await apiClient.post<SignupResponse>("/users/add", {
+      firstName: credentials.firstName.trim(),
+      lastName: credentials.lastName.trim(),
+      username: credentials.username.trim(),
+      email: credentials.email.trim(),
+      password: credentials.password,
+    });
+    return response.data;
   },
 
   /**

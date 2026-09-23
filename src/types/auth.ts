@@ -3,6 +3,14 @@ export interface LoginCredentials {
   password: string;
 }
 
+export interface SignupCredentials {
+  firstName: string;
+  lastName: string;
+  username: string;
+  email: string;
+  password: string;
+}
+
 export interface User {
   id: number;
   username: string;
@@ -26,6 +34,15 @@ export interface LoginResponse {
   accessToken?: string;
   token?: string; // DummyJSON supports both token and accessToken
   refreshToken?: string;
+}
+
+export interface SignupResponse {
+  id: number;
+  firstName: string;
+  lastName: string;
+  username: string;
+  email: string;
+  age?: number;
 }
 
 export interface AuthContextType {
